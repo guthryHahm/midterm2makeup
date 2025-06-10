@@ -23,7 +23,6 @@
   background-color: white;
   width: fit-content;
   margin: auto;
-  overflow-y: scroll;
   padding: var(--chat-padding, 10px);
 }
 
