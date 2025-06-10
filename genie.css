@@ -1,0 +1,131 @@
+*{
+  --usertxtcolor:#dbeaff;
+  --send-color:#92b1f4;
+  --bot-color:#f1f4f9;
+  --backdrop-color:#64748b;
+  --nameTitle: #6a778b;
+  --radius: 15px;
+  --chat-padding:20px;
+  --light-color:#e5e6ea;
+  font-size: large;
+  color:#1d2a3d ;
+
+}
+.textbox {
+  border-radius: var(--radius,10px);
+  border-width: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#chat {
+  background-color: white;
+  width: fit-content;
+  margin: auto;
+  overflow-y: scroll; 
+  padding: var(--chat-padding,10px);
+ }
+#chat *{
+  font-size: medium;
+}
+.message {
+  margin: 5px 0;
+  width: fit-content;
+  padding: 15px;
+  border-radius: var(--radius,10px);
+  * {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding: 0px;
+    }
+ .nameTitle {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: left;
+  margin-bottom: 1ch;
+  b {
+  color: var(--nameTitle,grey);
+  font-size: small !important;
+  }
+}
+max-width: 500px;
+overflow-wrap: anywhere;
+}
+
+.user {
+  background-color:var(--usertxtcolor ,lightblue);
+  margin: 0;
+}
+.usertextbox {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bot {
+  background-color: var(--bot-color,lightgray);
+}
+
+body {
+  font-family: Arial;
+  margin: 20px;
+  background-color: var(--backdrop-color,gray);
+}
+p {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: red;
+  margin-bottom: 0px;
+  font-size:xxx-large;
+}
+#input {
+  width:35ch;
+  border-width: 1.5px;
+  border-color:var(--light-color,lightgray);
+  border-style:solid;
+}
+hr {
+border-color:var(--light-color,lightgray);
+border-width:1px;
+border-style:solid;
+margin-left: calc(-1 * var(--chat-padding,-10px));
+margin-right: calc(-1 * var(--chat-padding,-10px));
+}
+#userinput {
+  margin-top: 2ch;
+  display: flex;
+  justify-content: right;
+  gap:10px;
+  * {
+    --padding-side:2ch;
+    padding-left: var(--padding-side, 2ch);
+    padding-right: var(--padding-side, 2ch);
+    font-size: large;
+  }
+  p {
+    --padding-side:0ch;
+    --margin-side:0ch;
+    padding-left: var(--padding-side, 2ch);
+    padding-right: var(--padding-side, 2ch);
+
+    margin-left: var(--margin-side, 2ch);
+    margin-right: var(--margin-side, 2ch);
+  }
+}
+
+#chatbox {
+  height: 500px;
+  overflow-y: scroll;
+}
+#send {
+  --padding-side:2.75ch;
+  color: white;
+  padding: 1.25ch;
+  padding-left:var(--padding-side,2.5ch) ;
+  padding-right:var(--padding-side,2.5ch) ;
+  background-color:var(--send-color ,lightblue);
+}
